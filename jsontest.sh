@@ -1,14 +1,18 @@
 #!/bin/sh
 json=$1
+logdate=`date +%Y年%m月%d日%H:%M:%S`
 
-#config mobile list
+#config email list
 watchEmail=(
-'zackzhang.g@gmail.com'
+'zaokzhang@sohu-inc.com'
 )
 countEmail=${#watchEmail[@]}
 
-echo "start to test :" $json
+echo "========== start ==========" >> jsontest.log
+echo "==========" $logdate "==========" >> jsontest.log
+echo "start to test :" $json >> jsontest.log
 result=`echo ${json} | ./JSON.sh 2>&1 | grep "EXPECTED"`
+echo $result >> jsontest.log
 if [ -n "$result" ]
 then
         echo ${json}" is invalid"
@@ -20,3 +24,4 @@ then
                 let "j = $j + 1"
         done
 fi
+echo "========== end ==========" >> jsontest.log
