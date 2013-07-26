@@ -1,7 +1,7 @@
 json-test
 =========
 
-检验json格式是否正确的脚本 
+检验json格式是否正确的脚本  
 This software is a shell program which test if a json is right.
 
 ##Thanks##
