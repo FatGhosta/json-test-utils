@@ -8,7 +8,7 @@ This software is a shell program which test if the pattern of json is right.
 本脚本基于[JSON.sh](https://github.com/dominictarr/JSON.sh)项目，该项目是一个管道化的JSON解析器脚本。  
 This software is based on [JSON.sh](https://github.com/dominictarr/JSON.sh), a pipeable JSON parser written in Bash.  
 
-##Quick Start##  
+##Quick Start##
 
 ###Notice###
 在使用之前，请确保JSON.sh已经与本脚本所在文件目录相同。  
