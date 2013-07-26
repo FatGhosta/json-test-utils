@@ -13,15 +13,4 @@ echo "==========" $logdate "==========" >> jsontest.log
 echo "start to test :" $json >> jsontest.log
 result=`echo ${json} | ./JSON.sh 2>&1 | grep "EXPECTED"`
 echo $result >> jsontest.log
-if [ -n "$result" ]
-then
-        echo ${json}" is invalid"
-
-        j=0
-        while [ "$j" -lt "$countEmail" ]
-        do
-                echo ${json}" is invalid" | mail -s "json错误报告" ${watchEmail[$j]}
-                let "j = $j + 1"
-        done
-fi
 echo "========== end ==========" >> jsontest.log
