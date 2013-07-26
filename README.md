@@ -15,5 +15,7 @@ This software is based on [JSON.sh](https://github.com/dominictarr/JSON.sh), a p
 并且本机装有mailx，mail，sendmail等发送邮件软件。
 
 ###Example###
+```
 sh jsontest.sh '{"aaa":1,"bbb":2}'  
+```
 json格式是否正确，可以查看与脚本相同目录下的jsontest.log。
