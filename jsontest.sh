@@ -20,7 +20,7 @@ then
         j=0
         while [ "$j" -lt "$countEmail" ]
         do
-                echo ${json}" is invalid" | mail -s "json错误报告" ${watchEmail[$j]} >/dev/null
+                echo ${json}" is invalid" | mail -s "json错误报告" ${watchEmail[$j]}
                 let "j = $j + 1"
         done
 fi
