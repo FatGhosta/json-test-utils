@@ -8,7 +8,7 @@ countUrl=${#jsonUrlList[@]}
 
 #config mail list
 watchEmail=(
-'zackzhang.g@google.com'
+'zackzhang.g@gmail.com'
 )
 countEmail=${#watchEmail[@]}
 
